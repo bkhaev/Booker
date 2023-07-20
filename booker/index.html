@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://localhost/booker/index.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost/booker/index.css">
+    <meta name="description" content="Найдите вашу любимую книгу. Большой выбор и гибкие фильтры!">
+    <title>Books</title>
+</head>
+<body>
+    <header>
+        Booker
+    </header>
+    <main>
+        <h1>Поиск книг</h1>
+        <form id="Form">
+            <input id="searchInp" type="search" placeholder="Введите запрос" class="search-input">
+            <details id="searchFilters" class="spoiler">
+                <summary></summary>
+                <p>Загрузка...</p>
+            </details>
+            <input id="searchGoBtn" type="submit" value="Искать" class="btn-primary">
+        </form>
+        <h2 id="searchResultsTotal">Результаты поиска</h2>
+        <div id="searchResults">
+            <p>Загрузка...</p>
+        </div>
+        <div id="modalArea" class="overlay">
+            <div class="modal">
+                <h2></h2>
+                <p></p>
+                <div align="right"><button type="button" id="closeModalBtn" class="btn-primary">Закрыть</button></div>
+            </div>
+        </div>
+        <a href="http://localhost/booker/service/update_db.php" target="_blank">Ссылка на скрипт</a>
+    </main>
+    <footer>
+        Copyright © 2023 Booker. All rights reserved.
+    </footer>
+</body>
+</html>
