@@ -1,1 +1,11 @@
-# Booker
+Структура проекта:
+- index.html: Страница поиска
+- index.js: логика и инициализация приложения
+- index.css: стили
+- api: АПИ
+  - index.php: Обработка HTTP-запросов
+  - .htaccess: настройка конфигурации URL адреса
+- service:
+  - bookerlib.php: библиотека функций
+  - config.php: скрипт подключения к БД
+  - update_db.php: скрипт парсинга
